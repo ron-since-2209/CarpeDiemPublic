@@ -6,7 +6,7 @@ async function fetchPrivateJSON(path) {
         throw new Error("未認証です。GitHub OAuth 認証を行ってください。");
     }
 
-    const url = `https://api.github.com/repos/Yohsuke/CarpeDiem/contents/data/${path}`;
+    const url = `https://api.github.com/repos/ron-since-2209/CarpeDiem/contents/data/${path}`;
 
     const res = await fetch(url, {
         headers: {
