@@ -5,7 +5,7 @@
 // ★ あなたの GitHub OAuth App の設定をここに入れる
 const CLIENT_ID = "Ov23liDnkKNkGR6q4wTj";
 const REDIRECT_URI = "https://ron-since-2209.github.io/CarpeDiemPublic/";  // 認可後に戻る URL
-const const BACKEND_TOKEN_ENDPOINT = "https://carpediem-backend.carpediem-backend.workers.dev"; 
+const BACKEND_TOKEN_ENDPOINT = "https://carpediem-backend.carpediem-backend.workers.dev"; 
 // ↑ Authorization Code をアクセストークンに交換するあなたのバックエンド
 
 // ===============================
