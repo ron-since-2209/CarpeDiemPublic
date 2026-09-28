@@ -5,7 +5,7 @@
 // ★ あなたの GitHub OAuth App の設定をここに入れる
 const CLIENT_ID = "Ov23liDnkKNkGR6q4wTj";
 const REDIRECT_URI = "https://ron-since-2209.github.io/CarpeDiemPublic/";  // 認可後に戻る URL
-const BACKEND_TOKEN_ENDPOINT = window.location.origin + window.location.pathname; 
+const const BACKEND_TOKEN_ENDPOINT = "https://carpediem-backend.carpediem-backend.workers.dev"; 
 // ↑ Authorization Code をアクセストークンに交換するあなたのバックエンド
 
 // ===============================
@@ -16,7 +16,7 @@ document.getElementById("login-btn").addEventListener("click", () => {
     `https://github.com/login/oauth/authorize` +
     `?client_id=${CLIENT_ID}` +
     `&redirect_uri=${encodeURIComponent(REDIRECT_URI)}` +
-    `&scope=public_repo`;  // PrivateRepo を読む際には repo 権限が必要 (auth.jsは不要)
+    `&scope=repo`;  // PrivateRepo を読まない際には public_repo 権限で良い (auth.jsは必要らしい)
 
   window.location.href = githubAuthUrl;
 });
