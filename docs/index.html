@@ -1,41 +1,14 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CarpeDiem UI</title>
-
-  <!-- 検索エンジンから完全に除外 -->
-  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
-
-  <!-- UI 用 CSS -->
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-
-<body>
-
-<h2>MGCデータ取得</h2>
-
-<!-- GitHub OAuth 認証 -->
-<button id="login-btn">GitHub OAuth 認証</button>
-<div id="auth-status"></div>
-
-<!-- 認証後に表示される領域 -->
-<div id="data-section" style="display:none;">
-
-  <label>シーズン: <input type="number" id="season" min="1"></label>
-  <label>節: <input type="number" id="section" min="1"></label>
-  <button id="loadBtn">データ取得</button>
-
-  <div class="section-title">コース・ホール・ピン一覧</div>
-  <div id="mgcTableContainer"></div>
-
-  <div class="section-title">ショットデータ</div>
-  <div id="shotTableContainer"></div>
-
-</div>
-
-<script src="./js/auth.js"></script>
-<script src="./js/app.js"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carpediem-viewer</title>
+    <script type="module" crossorigin src="/assets/index-_yytU_BP.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DdV6UqYn.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
 </html>
